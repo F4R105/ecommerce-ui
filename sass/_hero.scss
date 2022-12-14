@@ -1,0 +1,27 @@
+section#hero {
+    position: relative;
+    z-index: -1;
+    height: 200px;
+    background-image: url(../utils/hD5SzU.jpg);
+    background-position: center;
+
+    .container {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        opacity: 0.1;
+        background-color: rgba(rgb(212, 0, 255),1);
+    }
+}

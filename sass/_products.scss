@@ -1,0 +1,51 @@
+section#products {
+    margin-top: 1em;
+
+    .container {
+
+        .products_category {
+            // background-color: grey;
+            border-radius: 3px;
+            padding: 0.5em;
+            margin-top: 1em;
+            min-height: 100px;
+        }
+
+        #products_container {
+            // outline: 2px solid red;
+            padding: 0.5em;
+            display: flex;
+            gap: 1em;
+            overflow-x: scroll;
+        }
+
+        .product {
+            // outline: 2px solid red;
+            flex-shrink: 0;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+
+            // *{
+            //     outline: 2px solid red;
+            // }
+
+            .product_image {
+                aspect-ratio: 1/1;
+                background-color: rgb(188, 136, 255);
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .product_name {
+                padding: 3px 0;
+            }
+
+            .product_price {
+                padding: 3px 0;
+            }
+        }
+    }
+}
