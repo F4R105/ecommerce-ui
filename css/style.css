@@ -31,6 +31,15 @@ section {
   height: 100%;
 }
 
+.hide_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide_scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
 nav {
   position: fixed;
   height: 50px;
@@ -159,13 +168,32 @@ section#products .container .product {
 section#products .container .product .product_image {
   aspect-ratio: 1/1;
   background-color: rgb(188, 136, 255);
+  border-radius: 5px;
+  overflow: hidden;
 }
 section#products .container .product .product_image img {
   width: 100%;
 }
 section#products .container .product .product_name {
   padding: 3px 0;
+  text-align: center;
 }
 section#products .container .product .product_price {
   padding: 3px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #1d001d;
+  height: 100px;
+  margin-top: 1em;
+}
+footer #copyright {
+  height: 30px;
+  background-color: #0e000e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(77, 77, 77);
+  font-size: 0.8rem;
 }
