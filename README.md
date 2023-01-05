@@ -1,3 +1,3 @@
-# ecommerce-ui
+# A simple E-commerce User interface
 
-[[https://f4r105.github.io/ecommerce-ui/]]
+(Click here to view)[https://f4r105.github.io/ecommerce-ui/]
